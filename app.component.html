@@ -1,0 +1,55 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" align="center">
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName" />
+    <span *ngIf="!profileForm.controls['firstName'].valid">*</span>
+  </label><br><br>
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName">
+    <span *ngIf="!profileForm.controls['lastName'].valid">*</span>
+  </label><br><br>
+  <label>
+    Email:
+    <input type="email" formControlName="email">
+    <span *ngIf="!profileForm.controls['email'].valid">*</span>
+  </label><br><br>
+  <label>
+    ContactNo:
+    <input type="text" formControlName="contactno">
+    <span *ngIf="!profileForm.controls['contactno'].valid">*</span>
+  </label><br><br>
+  <label>
+    Password:
+    <input type="text" formControlName="password">
+    <span *ngIf="!profileForm.controls['password'].valid">*</span>
+  </label><br><br>
+  <label>
+    Confirm Password:
+    <input type="text" formControlName="confirmpassword">
+    <span *ngIf="!profileForm.controls['confirmpassword'].valid">*</span>
+  </label><br><br> 
+  <label>
+    Gender: 
+    <input type="text" formControlName="gender">
+    <span *ngIf="!profileForm.controls['gender'].valid">*</span>
+  </label><br><br>
+  <label>
+    EmpId:
+    <input type="text" formControlName="EmpId">
+    <span *ngIf="!profileForm.controls['EmpId'].valid">*</span>
+  </label>
+  <br>
+  <br>
+
+
+  <button type="submit">Submit</button>
+
+</form>
