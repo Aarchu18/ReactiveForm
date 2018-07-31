@@ -8,7 +8,8 @@
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" align="center">
   <label>
     First Name:
-    <input type="text" formControlName="firstName" />
+    
+    <input type="text"formControlName="firstName" />
     <span *ngIf="!profileForm.controls['firstName'].valid">*</span>
   </label><br><br>
   <label>
